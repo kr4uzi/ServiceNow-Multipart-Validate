@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function resetForm(btn) {
+	btn.closest('form').reset();
+	return false;
+}
+
+function submitForm(btn) {
+	btn.setAttribute('disabled', '');
+
+	var resNode = document.querySelector('p[sn-atf-id="rest-result-text"]');
+	resNode.innerHTML = '';
+	var form = btn.closest('form');
+
+	var req = new XMLHttpRequest();
+	req.open('post', '/api/x_376096_mp_val/form', true); // ATF overrides open but fails to set the default async value (which is true)
+	req.setRequestHeader('Accept', 'application/json');
+	req.setRequestHeader('X-UserToken', form.querySelector('input[name="sysparm_ck"]').value);
+	req.addEventListener('load', function () {
+		//var res = JSON.parse(req.responseText);
+		resNode.innerHTML = req.responseText;		
+		btn.removeAttribute('disabled');
+	});
+
+	// disabled inputs are not included in the form data (which is undesired),
+	// so we temporarily enable them
+	var atts = form.querySelectorAll('input[type=file][disabled]');
+	for (var i = 0; i < atts.length; i++) {
+		atts[i].removeAttribute('disabled');
+	}
+	req.send(new FormData(form));
+	for (var i = 0; i < atts.length; i++) {
+		atts[i].setAttribute('disabled', '');
+	}
+
+	return false;
+}
+
+function onReferenceUpdated(node) {
+	var form = node.closest('form');
+	var target = form.querySelector('input[name="example-file"]');
+	if (node.value) {
+		var req = new XMLHttpRequest();
+		req.responseType = 'blob';
+		req.open('get', '/api/now/attachment/' + node.value + '/file', true); // ATF overrides open but fails to set the default async value (which is true)
+		req.setRequestHeader('X-UserToken', form.querySelector('input[name="sysparm_ck"]').value);
+		req.addEventListener('load', function () {
+			var metadata = JSON.parse(req.getResponseHeader('X-Attachment-Metadata'));
+			var list = new DataTransfer();
+			list.items.add(new File([req.response], metadata.file_name, {
+				type: metadata.content_type
+			}));
+			target.files = list.files;
+			form.querySelector('button[type=submit]').removeAttribute('disabled');
+		});
+
+		req.send();
+	} else {
+		target.value = null;
+		form.querySelector('button[type=submit]').setAttribute('disabled', '');
+	}
+}
+
+addRenderEvent(function () {
+	var attInput = document.querySelector('form input[name="example-attachment"]');
+	var originalChange = attInput.getAttribute('change') || '';
+	if (originalChange && !originalChange.startsWith(';')) {
+		originalChange = ';' + originalChange;
+	}
+	
+	attInput.setAttribute('onchange', ';onReferenceUpdated(this)' + originalChange);
+});]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_376096_mp_val_sample_upload.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<form enctype="multipart/form-data" onsubmit="return false;">
+		<input type="hidden" name="sysparm_ck" value="${gs.getSession().getSessionToken()}" />
+		<div class="row">
+			<div class="col-md-12">
+				<p>This UI Page provides some sample input fields which are filled by random values by the ATF.</p>
+				<p>After submission the transmitted data is parsed and </p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 form-group">
+				<label for="example-text-id" class="col-xs-12 col-md-3 col-lg-4 control-label">Form-Field: "example-text"</label>
+				<div class="col-xs-10 col-sm-9 col-md-6 col-lg-5 form-field input_controls">
+					<input id="example-text-id" type="text" name="example-text" sn-atf-id="example-text-id" class="form-control" />
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 form-group">
+				<label for="example-attachment" class="col-xs-12 col-md-3 col-lg-4 control-label">Select an attachment</label>
+				<div class="col-xs-10 col-sm-9 col-md-6 col-lg-5 form-field input_controls">
+					<g:ui_reference name="example-attachment" table="sys_attachment" value="${RP.getParameterValue('attachment')}" />
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 form-group">
+				<label for="example-attachment-id" class="col-xs-12 col-md-3 col-lg-4 control-label">File (automatic)</label>
+				<div class="col-xs-10 col-sm-9 col-md-6 col-lg-5 form-field input_controls">
+					<input name="example-file" id="example-file-id" type="file" disabled="" />
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 form-group">
+				<label for="example-text2-id" class="col-xs-12 col-md-3 col-lg-4 control-label">Form-Field: "example-text2"</label>
+				<div class="col-xs-10 col-sm-9 col-md-6 col-lg-5 form-field input_controls">
+					<input id="example-text2-id" type="text" name="example-text2" sn-atf-id="example-text2-id" class="form-control" />
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 form-group">
+				<button type="reset" onclick="resetForm(this);" sn-atf-id="reset-button">Reset</button>
+				<button type="submit" onclick="submitForm(this);" sn-atf-id="submit-button" disabled="" class="pull-right">Submit</button>
+			</div>
+		</div>
+	</form>
+	<p sn-atf-area="rest-result-area" sn-atf-id="rest-result-text"></p>
+</j:jelly>]]></html>
+        <name>sample_upload</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-13 16:39:37</sys_created_on>
+        <sys_id>55643b2c93849210e02873718bba107b</sys_id>
+        <sys_mod_count>72</sys_mod_count>
+        <sys_name>sample_upload</sys_name>
+        <sys_package display_value="Multipart Validate" source="x_376096_mp_val">71a3b3e893849210e02873718bba1055</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Multipart Validate">71a3b3e893849210e02873718bba1055</sys_scope>
+        <sys_update_name>sys_ui_page_55643b2c93849210e02873718bba107b</sys_update_name>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-17 22:44:11</sys_updated_on>
+    </sys_ui_page>
+</record_update>

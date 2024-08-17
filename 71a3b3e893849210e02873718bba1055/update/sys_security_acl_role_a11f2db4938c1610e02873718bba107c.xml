@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-13 16:39:37</sys_created_on>
+        <sys_id>a11f2db4938c1610e02873718bba107c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_376096_mp_val_sample_upload.x_376096_mp_val.validator</sys_name>
+        <sys_package display_value="Multipart Validate" source="x_376096_mp_val">71a3b3e893849210e02873718bba1055</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Multipart Validate">71a3b3e893849210e02873718bba1055</sys_scope>
+        <sys_security_acl display_value="x_376096_mp_val_sample_upload">251fed78934c1610e02873718bba103b</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_a11f2db4938c1610e02873718bba107c</sys_update_name>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-13 16:39:37</sys_updated_on>
+        <sys_user_role display_value="x_376096_mp_val.validator" name="x_376096_mp_val.validator">f62dad78934c1610e02873718bba1083</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

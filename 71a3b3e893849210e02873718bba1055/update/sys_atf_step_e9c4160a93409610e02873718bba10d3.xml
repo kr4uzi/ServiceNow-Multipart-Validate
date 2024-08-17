@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Generate string of length: 15</description>
+        <display_name>Generate Random String</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>2</order>
+        <step_config display_value="Generate Random String">263313e4c3123300eaac11fe81d3aef9</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-17 16:36:46</sys_created_on>
+        <sys_id>e9c4160a93409610e02873718bba10d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Generate Random String</sys_name>
+        <sys_package display_value="Multipart Validate" source="x_376096_mp_val">71a3b3e893849210e02873718bba1055</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Multipart Validate">71a3b3e893849210e02873718bba1055</sys_scope>
+        <sys_update_name>sys_atf_step_e9c4160a93409610e02873718bba10d3</sys_update_name>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-17 16:36:46</sys_updated_on>
+        <table/>
+        <test display_value="Multipart: Validate">b7a37be893849210e02873718bba10c7</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=e9c4160a93409610e02873718bba10d3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>e9c4160a93409610e02873718bba10d3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-17 16:36:46</sys_created_on>
+        <sys_id>fac45eca93409610e02873718bba103f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-17 16:36:46</sys_updated_on>
+        <value>15</value>
+        <variable display_value="Length">594393e4c3123300eaac11fe81d3aef0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_263313e4c3123300eaac11fe81d3aef9^id=e9c4160a93409610e02873718bba10d3"/>
+</record_update>

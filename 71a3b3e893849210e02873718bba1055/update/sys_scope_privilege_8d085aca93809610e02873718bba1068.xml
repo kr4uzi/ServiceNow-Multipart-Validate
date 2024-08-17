@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Multipart Validate">71a3b3e893849210e02873718bba1055</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-17 16:50:51</sys_created_on>
+        <sys_id>8d085aca93809610e02873718bba1068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GlideDigest.getSHA1HexFromInputStream</sys_name>
+        <sys_package display_value="Multipart Validate" source="x_376096_mp_val">71a3b3e893849210e02873718bba1055</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Multipart Validate">71a3b3e893849210e02873718bba1055</sys_scope>
+        <sys_update_name>sys_scope_privilege_8d085aca93809610e02873718bba1068</sys_update_name>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-17 16:50:51</sys_updated_on>
+        <target_name>GlideDigest.getSHA1HexFromInputStream</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+</record_update>

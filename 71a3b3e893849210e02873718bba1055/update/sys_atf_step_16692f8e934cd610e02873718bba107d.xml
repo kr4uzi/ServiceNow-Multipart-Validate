@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Click the component: 'Button &lt;button&gt;: Reset', Page area: 'default'</description>
+        <display_name>Click Component (Custom UI)</display_name>
+        <inputs/>
+        <mugshots_cache_json>{"ae37841b1cb55930c958d7602c63f113":"{\"area\":\"default\",\"sn_atf_mugshot_short_description\":\"Button &lt;button&gt;: Reset\",\"inner_text\":\"Reset\",\"sn_atf_mugshot_long_description\":\"Button &lt;button&gt;: Reset\",\"methods\":[\"click\"],\"sn-atf-id\":\"reset-button\",\"sn_atf_mugshot_label\":\"Reset\",\"index\":0,\"type\":\"reset\",\"version\":\"25.3\",\"sn_atf_mugshot_label_for_label_path\":\"\",\"interesting_element_path\":[\"body\",\"form\",\"button\"],\"get_value_result\":\"Reset\",\"sn_atf_mugshot_tag_display_name\":\"Button &lt;button&gt;\",\"sn_atf_mugshot_value\":\"Reset\",\"tag\":\"button\",\"isDisabled\":false,\"label_path\":[\"default\"],\"hash\":\"ae37841b1cb55930c958d7602c63f113\",\"html_value\":\"\"}"}</mugshots_cache_json>
+        <notes/>
+        <order>9</order>
+        <step_config display_value="Click Component (Custom UI)">def25c4b73730300c79260bdfaf6a700</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-17 22:46:36</sys_created_on>
+        <sys_id>16692f8e934cd610e02873718bba107d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Click Component (Custom UI)</sys_name>
+        <sys_package display_value="Multipart Validate" source="x_376096_mp_val">71a3b3e893849210e02873718bba1055</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Multipart Validate">71a3b3e893849210e02873718bba1055</sys_scope>
+        <sys_update_name>sys_atf_step_16692f8e934cd610e02873718bba107d</sys_update_name>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-17 22:46:36</sys_updated_on>
+        <table/>
+        <test display_value="Multipart: Validate">b7a37be893849210e02873718bba10c7</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=16692f8e934cd610e02873718bba107d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>16692f8e934cd610e02873718bba107d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-17 22:46:37</sys_created_on>
+        <sys_id>ec796f42938cd610e02873718bba10fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-17 22:46:37</sys_updated_on>
+        <value>ae37841b1cb55930c958d7602c63f113</value>
+        <variable display_value="Component">ee05588b73730300c79260bdfaf6a749</variable>
+    </sys_variable_value>
+</record_update>

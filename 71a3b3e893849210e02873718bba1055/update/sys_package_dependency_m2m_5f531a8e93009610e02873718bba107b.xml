@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Scripted REST APIs" source="com.glide.scripted_rest_services">2d9bbfe2f832021008dd9cfea425ac1a</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>markus.kraus</sys_created_by>
+        <sys_created_on>2024-08-17 16:30:31</sys_created_on>
+        <sys_id>5f531a8e93009610e02873718bba107b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Multipart Validate" source="x_376096_mp_val">71a3b3e893849210e02873718bba1055</sys_package>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-08-17 16:30:31</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

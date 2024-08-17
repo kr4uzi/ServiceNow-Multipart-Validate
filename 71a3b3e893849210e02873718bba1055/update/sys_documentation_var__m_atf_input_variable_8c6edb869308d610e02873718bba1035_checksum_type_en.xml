@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="checksum_type" label="Checksum type" language="en" table="var__m_atf_input_variable_8c6edb869308d610e02873718bba1035">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>checksum_type</element>
+            <help/>
+            <hint/>
+            <label>Checksum type</label>
+            <language>en</language>
+            <name>var__m_atf_input_variable_8c6edb869308d610e02873718bba1035</name>
+            <plural>Checksum type</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>markus.kraus</sys_created_by>
+            <sys_created_on>2024-08-17 22:11:24</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Checksum type</sys_name>
+            <sys_package display_value="Multipart Validate" source="x_376096_mp_val">71a3b3e893849210e02873718bba1055</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Multipart Validate">71a3b3e893849210e02873718bba1055</sys_scope>
+            <sys_update_name>sys_documentation_var__m_atf_input_variable_8c6edb869308d610e02873718bba1035_checksum_type_en</sys_update_name>
+            <sys_updated_by>markus.kraus</sys_updated_by>
+            <sys_updated_on>2024-08-17 22:11:24</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
