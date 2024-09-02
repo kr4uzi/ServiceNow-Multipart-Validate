@@ -3,16 +3,15 @@
         <active>true</active>
         <copied_from/>
         <description>Set the components on the page as follows:
-'Text &lt;input&gt; [sys_display.example-attachment]' = '{{Step 3: Record Query.First record}}', Page area = 'default'
 'Text &lt;input&gt;: Form-Field: "example-text2"' = '{{Step 1: Generate Random String.Random String}}', Page area = 'Form-Field: "example-text2"'
 'Text &lt;input&gt;: Form-Field: "example-text"' = '{{Step 2: Generate Random String.Random String}}', Page area = 'Form-Field: "example-text"'
 </description>
         <display_name>Set Component Values (Custom UI)</display_name>
         <inputs/>
         <inputs/>
-        <mugshots_cache_json>{"432c47758422d89d3f37bfefa17c9090":"{\"area\":\"default\",\"sn_atf_mugshot_short_description\":\"Text &lt;input&gt;: Form-Field: \\\"example-text2\\\"\",\"sn_atf_mugshot_long_description\":\"Text &lt;input&gt; [example-text2-id]: Form-Field: \\\"example-text2\\\"\",\"methods\":[\"setValue\"],\"sn-atf-id\":\"example-text2-id\",\"sn_atf_mugshot_label\":\"Form-Field: \\\"example-text2\\\"\",\"type\":\"text\",\"version\":\"25.3\",\"label_for_input\":{\"inner_text\":\"Form-Field: \\\"example-text2\\\"\"},\"sn_atf_mugshot_label_for_label_path\":\"Form-Field: \\\"example-text2\\\"\",\"interesting_element_path\":[\"body\",\"form\",\"input\"],\"get_value_result\":\"\",\"sn_atf_mugshot_tag_display_name\":\"Text &lt;input&gt;\",\"name\":\"example-text2\",\"sn_atf_mugshot_value\":\"\",\"tag\":\"input\",\"isDisabled\":false,\"id\":\"example-text2-id\",\"label_path\":[\"Form-Field: \\\"example-text2\\\"\"],\"hash\":\"432c47758422d89d3f37bfefa17c9090\",\"html_value\":\"\"}","46e09f239a300129549b411c0e4e1591":"{\"area\":\"default\",\"sn-atf-data-type-params\":\"{\\\"reference\\\":\\\"sys_attachment\\\",\\\"reference_qual\\\":\\\"\\\"}\",\"sn_atf_mugshot_short_description\":\"Text &lt;input&gt; [sys_display.example-attachment]\",\"sn_atf_mugshot_long_description\":\"Text &lt;input&gt; [sys_display.example-attachment]\",\"methods\":[\"setValue\"],\"sn_atf_mugshot_label\":\"sys_display.example-attachment\",\"type\":\"text\",\"version\":\"25.3\",\"sn-atf-class\":\"builtin:ATF.BaseMacroReference\",\"sn_atf_mugshot_label_for_label_path\":\"\",\"interesting_element_path\":[\"body\",\"form\",\"input\"],\"get_value_result\":\"\",\"sn_atf_mugshot_tag_display_name\":\"Text &lt;input&gt;\",\"data_type\":\"reference\",\"name\":\"sys_display.example-attachment\",\"sn_atf_mugshot_value\":\"\",\"tag\":\"input\",\"isDisabled\":false,\"id\":\"sys_display.example-attachment\",\"label_path\":[\"default\"],\"hash\":\"46e09f239a300129549b411c0e4e1591\",\"html_value\":\"\",\"sn-atf-data-type\":\"reference\"}","0449b9e2610547387b48428d0d2e045b":"{\"area\":\"default\",\"sn_atf_mugshot_short_description\":\"Text &lt;input&gt;: Form-Field: \\\"example-text\\\"\",\"sn_atf_mugshot_long_description\":\"Text &lt;input&gt; [example-text-id]: Form-Field: \\\"example-text\\\"\",\"methods\":[\"setValue\"],\"sn-atf-id\":\"example-text-id\",\"sn_atf_mugshot_label\":\"Form-Field: \\\"example-text\\\"\",\"type\":\"text\",\"version\":\"25.3\",\"label_for_input\":{\"inner_text\":\"Form-Field: \\\"example-text\\\"\"},\"sn_atf_mugshot_label_for_label_path\":\"Form-Field: \\\"example-text\\\"\",\"interesting_element_path\":[\"body\",\"form\",\"input\"],\"get_value_result\":\"\",\"sn_atf_mugshot_tag_display_name\":\"Text &lt;input&gt;\",\"name\":\"example-text\",\"sn_atf_mugshot_value\":\"\",\"tag\":\"input\",\"isDisabled\":false,\"id\":\"example-text-id\",\"label_path\":[\"Form-Field: \\\"example-text\\\"\"],\"hash\":\"0449b9e2610547387b48428d0d2e045b\",\"html_value\":\"\"}"}</mugshots_cache_json>
+        <mugshots_cache_json>{"432c47758422d89d3f37bfefa17c9090":"{\"area\":\"default\",\"sn_atf_mugshot_short_description\":\"Text &lt;input&gt;: Form-Field: \\\"example-text2\\\"\",\"sn_atf_mugshot_long_description\":\"Text &lt;input&gt; [example-text2-id]: Form-Field: \\\"example-text2\\\"\",\"methods\":[\"setValue\"],\"sn-atf-id\":\"example-text2-id\",\"sn_atf_mugshot_label\":\"Form-Field: \\\"example-text2\\\"\",\"type\":\"text\",\"version\":\"25.3\",\"label_for_input\":{\"inner_text\":\"Form-Field: \\\"example-text2\\\"\"},\"sn_atf_mugshot_label_for_label_path\":\"Form-Field: \\\"example-text2\\\"\",\"interesting_element_path\":[\"body\",\"form\",\"input\"],\"get_value_result\":\"\",\"sn_atf_mugshot_tag_display_name\":\"Text &lt;input&gt;\",\"name\":\"example-text2\",\"sn_atf_mugshot_value\":\"\",\"tag\":\"input\",\"isDisabled\":false,\"id\":\"example-text2-id\",\"label_path\":[\"Form-Field: \\\"example-text2\\\"\"],\"hash\":\"432c47758422d89d3f37bfefa17c9090\",\"html_value\":\"\"}","0449b9e2610547387b48428d0d2e045b":"{\"area\":\"default\",\"sn_atf_mugshot_short_description\":\"Text &lt;input&gt;: Form-Field: \\\"example-text\\\"\",\"sn_atf_mugshot_long_description\":\"Text &lt;input&gt; [example-text-id]: Form-Field: \\\"example-text\\\"\",\"methods\":[\"setValue\"],\"sn-atf-id\":\"example-text-id\",\"sn_atf_mugshot_label\":\"Form-Field: \\\"example-text\\\"\",\"type\":\"text\",\"version\":\"25.3\",\"label_for_input\":{\"inner_text\":\"Form-Field: \\\"example-text\\\"\"},\"sn_atf_mugshot_label_for_label_path\":\"Form-Field: \\\"example-text\\\"\",\"interesting_element_path\":[\"body\",\"form\",\"input\"],\"get_value_result\":\"\",\"sn_atf_mugshot_tag_display_name\":\"Text &lt;input&gt;\",\"name\":\"example-text\",\"sn_atf_mugshot_value\":\"\",\"tag\":\"input\",\"isDisabled\":false,\"id\":\"example-text-id\",\"label_path\":[\"Form-Field: \\\"example-text\\\"\"],\"hash\":\"0449b9e2610547387b48428d0d2e045b\",\"html_value\":\"\"}"}</mugshots_cache_json>
         <notes/>
-        <order>7</order>
+        <order>6</order>
         <step_config display_value="Set Component Values (Custom UI)">e5dd168473330300c79260bdfaf6a794</step_config>
         <sys_class_name>sys_atf_step</sys_class_name>
         <sys_created_by>markus.kraus</sys_created_by>
@@ -25,7 +24,7 @@
         <sys_scope display_value="Multipart Validate">71a3b3e893849210e02873718bba1055</sys_scope>
         <sys_update_name>sys_atf_step_6064d60a93409610e02873718bba10a3</sys_update_name>
         <sys_updated_by>markus.kraus</sys_updated_by>
-        <sys_updated_on>2024-08-17 22:46:37</sys_updated_on>
+        <sys_updated_on>2024-09-02 10:31:06</sys_updated_on>
         <table/>
         <test display_value="Multipart: Validate">b7a37be893849210e02873718bba10c7</test>
         <timeout/>
@@ -40,10 +39,10 @@
         <sys_created_by>markus.kraus</sys_created_by>
         <sys_created_on>2024-08-17 16:36:14</sys_created_on>
         <sys_id>fea41e8a93409610e02873718bba1074</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>markus.kraus</sys_updated_by>
-        <sys_updated_on>2024-08-17 16:59:24</sys_updated_on>
-        <value>46e09f239a300129549b411c0e4e1591={{step['5f799a8693c09610e02873718bba1096'].first_record}}^432c47758422d89d3f37bfefa17c9090={{step['cdb4128a93409610e02873718bba1070'].random_string}}^0449b9e2610547387b48428d0d2e045b={{step['e9c4160a93409610e02873718bba10d3'].random_string}}^EQ</value>
+        <sys_updated_on>2024-09-02 10:30:42</sys_updated_on>
+        <value>432c47758422d89d3f37bfefa17c9090={{step['cdb4128a93409610e02873718bba1070'].random_string}}^0449b9e2610547387b48428d0d2e045b={{step['e9c4160a93409610e02873718bba10d3'].random_string}}^EQ</value>
         <variable display_value="Component values">d12fde8473330300c79260bdfaf6a7b5</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=6064d60a93409610e02873718bba10a3"/>
@@ -53,10 +52,10 @@
         <sys_created_by>markus.kraus</sys_created_by>
         <sys_created_on>2024-08-17 16:36:14</sys_created_on>
         <sys_id>7ea41e8a93409610e02873718bba1074</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>markus.kraus</sys_updated_by>
-        <sys_updated_on>2024-08-17 16:59:24</sys_updated_on>
+        <sys_updated_on>2024-09-02 10:30:42</sys_updated_on>
         <table>var__m_atf_input_variable_e5dd168473330300c79260bdfaf6a794</table>
-        <value>46e09f239a300129549b411c0e4e1591={{step['5f799a8693c09610e02873718bba1096'].first_record}}^432c47758422d89d3f37bfefa17c9090={{step['cdb4128a93409610e02873718bba1070'].random_string}}^0449b9e2610547387b48428d0d2e045b={{step['e9c4160a93409610e02873718bba10d3'].random_string}}^EQ</value>
+        <value>432c47758422d89d3f37bfefa17c9090={{step['cdb4128a93409610e02873718bba1070'].random_string}}^0449b9e2610547387b48428d0d2e045b={{step['e9c4160a93409610e02873718bba10d3'].random_string}}^EQ</value>
     </sys_element_mapping>
 </record_update>

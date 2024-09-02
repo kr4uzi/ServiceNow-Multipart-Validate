@@ -2,28 +2,28 @@
     <sys_atf_step action="INSERT_OR_UPDATE">
         <active>true</active>
         <copied_from/>
-        <description>Navigate to the 'Sample Form' module in the 'Multipart Validation' application</description>
+        <description>Navigate to the 'Sample Form' module in the 'Multipart Validation' application. Then wait 5 Seconds</description>
         <display_name>Navigate to Module</display_name>
         <inputs/>
         <mugshots_cache_json/>
-        <notes/>
-        <order>6</order>
+        <notes>Wait a few seconds for the attachment to be loaded</notes>
+        <order>5</order>
         <step_config display_value="Navigate to Module">c832fc4073720300c79260bdfaf6a7a0</step_config>
         <sys_class_name>sys_atf_step</sys_class_name>
         <sys_created_by>markus.kraus</sys_created_by>
         <sys_created_on>2024-08-13 16:50:54</sys_created_on>
         <sys_id>b541fdf093cc1610e02873718bba1083</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>Navigate to Module</sys_name>
         <sys_package display_value="Multipart Validate" source="x_376096_mp_val">71a3b3e893849210e02873718bba1055</sys_package>
         <sys_policy/>
         <sys_scope display_value="Multipart Validate">71a3b3e893849210e02873718bba1055</sys_scope>
         <sys_update_name>sys_atf_step_b541fdf093cc1610e02873718bba1083</sys_update_name>
-        <sys_updated_by>0f092f4e934cd610e02873718bba10a8</sys_updated_by>
-        <sys_updated_on>2024-08-17 22:45:00</sys_updated_on>
+        <sys_updated_by>markus.kraus</sys_updated_by>
+        <sys_updated_on>2024-09-02 10:47:24</sys_updated_on>
         <table/>
         <test display_value="Multipart: Validate">b7a37be893849210e02873718bba10c7</test>
-        <timeout/>
+        <timeout>1970-01-01 00:00:05</timeout>
         <warning_message/>
     </sys_atf_step>
     <sys_variable_value action="delete_multiple" query="document_key=b541fdf093cc1610e02873718bba1083"/>
