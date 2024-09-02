@@ -9,7 +9,8 @@
 function submitForm(btn) {
 	btn.setAttribute('disabled', '');
 
-	var resNode = document.querySelector('p[sn-atf-id="rest-result-text"]');
+	var resNode = document.querySelector('pre[sn-atf-id="rest-result-text"]');
+	resNode.style.display = '';
 	resNode.innerHTML = '';
 	var form = btn.closest('form');
 
@@ -18,7 +19,7 @@ function submitForm(btn) {
 	req.setRequestHeader('Accept', 'application/json');
 	req.setRequestHeader('X-UserToken', form.querySelector('input[name="sysparm_ck"]').value);
 	req.addEventListener('load', function () {
-		var responseText = req.responseText
+		var responseText = req.responseText;
 		try {
 			resNode.innerHTML = JSON.stringify(JSON.parse(responseText), null, 2);
 		} catch (e) {
@@ -185,11 +186,11 @@ function dataURLtoFile(dataurl, filename) {
 		<div class="row">
 			<div class="col-md-6 form-group">
 				<button type="reset" onclick="resetForm(this);" sn-atf-id="reset-button">Reset</button>
-				<button type="submit" onclick="submitForm(this);" sn-atf-id="submit-button" disabled="" class="pull-right">Submit</button>
+				<button type="submit" onclick="submitForm(this);" sn-atf-id="submit-button" class="pull-right">Submit</button>
 			</div>
 		</div>
 	</form>
-	<p sn-atf-area="rest-result-area" sn-atf-id="rest-result-text"></p>
+	<pre sn-atf-area="rest-result-area" sn-atf-id="rest-result-text" style="display:none"></pre>
 </j:jelly>]]></html>
         <name>sample_upload</name>
         <processing_script/>
@@ -197,13 +198,13 @@ function dataURLtoFile(dataurl, filename) {
         <sys_created_by>markus.kraus</sys_created_by>
         <sys_created_on>2024-08-13 16:39:37</sys_created_on>
         <sys_id>55643b2c93849210e02873718bba107b</sys_id>
-        <sys_mod_count>92</sys_mod_count>
+        <sys_mod_count>95</sys_mod_count>
         <sys_name>sample_upload</sys_name>
         <sys_package display_value="Multipart Validate" source="x_376096_mp_val">71a3b3e893849210e02873718bba1055</sys_package>
         <sys_policy/>
         <sys_scope display_value="Multipart Validate">71a3b3e893849210e02873718bba1055</sys_scope>
         <sys_update_name>sys_ui_page_55643b2c93849210e02873718bba107b</sys_update_name>
         <sys_updated_by>markus.kraus</sys_updated_by>
-        <sys_updated_on>2024-09-02 11:27:14</sys_updated_on>
+        <sys_updated_on>2024-09-02 11:33:24</sys_updated_on>
     </sys_ui_page>
 </record_update>
